@@ -1,11 +1,14 @@
+/* poppins font */
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600&display=swap');
 
+/* navbar */
 *{
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
 
+/* default home button*/
 li, a{
     font-family: "Poppins";
     font-weight: 400;
@@ -20,19 +23,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 11% 30px 12%; 
+    padding: 30px 13% 30px 12%; 
     background-color: #2C363F;
     position:fixed;
 }
 
+/* website background colour */
 html{
     background-color: #B6B3D7;
 }
 
+/* logo */
 logo {
     max-width: 120px;
     height: auto;
 }
+
+
+/* Home button */
 
 .nav_links{
    display: flex;
@@ -40,7 +48,7 @@ logo {
 
 .nav_links li{
     display: inline-block;
-    padding: 0px 1.2rem;
+    padding: 12%;
     align-self: center;
 }
 
@@ -54,9 +62,10 @@ logo {
 
 /* padding for entire website */
 section{
-    padding: 6% 12% 0% 12%;
+    padding: 6% 12% 6% 12%;
 }
 
+/* hero section */
 .main-home{
     width: 100% ;
     height: 100vh;
@@ -86,6 +95,9 @@ section{
     
 }
 
+/* Blog overview section */
+
+/* Blog text */
 .blog-post h2{
     font-family: "Poppins";
     color: #2C363F;
@@ -99,6 +111,7 @@ section{
     font-size: 20px;
 }
 
+/* Blog containers */
 .post-container{
    display: grid; 
    grid-template-columns: repeat(3, 1fr);
@@ -118,7 +131,7 @@ section{
     background-color: #505490;
 }
 
-
+/* Blog container text */
 .grid-item h3{
     font-family: "Poppins";
     font-weight: 500;
@@ -146,6 +159,7 @@ section{
 }
 
 
+/* Make grids more responsive */
     @media only screen and (max-width: 900px){
         .post-container{
             grid-template-columns: 1fr;
@@ -167,11 +181,17 @@ section{
         }
     }
 
+
+
+/*      Blog entry page     */
+
+/* Top section of blog entry */
 .journal-title{
     margin: auto;
     width: 60%;
 }
 
+/* Top section text */
 .journal-title h2{
     padding-top: 100px;
     font-family: "Poppins";
@@ -186,19 +206,60 @@ section{
     font-size: 20px;
 }
 
+/* Blog entry container */
 .journal-text{
     margin:30px auto;
     align-items: flex-start;
     background: #f4f4f6;
     width:60%;
-    height:600px;
-    padding:30px;
+    height:100%;
+    padding:40px;
 }
 
+/* Blog entry section text */
 .journal-text p{
     font-family: "Poppins";
     font-size: 16px;
 }
+
+/* Blog entry image*/
+.journal-text img{
+    margin-top: 100px;;
+}
+
+.journal-image{
+    margin: auto;
+    width: 60%;
+}
+
+.week-navigator{
+    display: flex;
+    margin: 10px auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.week-navigator a{
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.week-navigator a:hover {
+    text-decoration: underline;
+    text-decoration-thickness:3px
+}
+
+.footer{
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #2C363F;
+}
+
+
 
 
 
