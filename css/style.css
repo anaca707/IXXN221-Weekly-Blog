@@ -1,0 +1,279 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* navbar */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+/* default home button*/
+li, a{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 24px;
+    color: #F4F4F6;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 13% 30px 12%; 
+    background-color: #2C363F;
+    position:fixed;
+}
+
+/* website background colour */
+html{
+    background-color: #B6B3D7;
+}
+
+/* logo */
+logo {
+    max-width: 120px;
+    height: 80;
+}
+
+
+/* Home button */
+
+.nav_links{
+   display: flex;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 12%;
+    align-self: center;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #B6B3D7;
+}
+
+/* padding for entire website */
+section{
+    padding: 6% 12% 6% 12%;
+}
+
+/* hero section */
+.main-home{
+    width: 100% ;
+    height: 100vh;
+    background-image: url("../img/anacaAnimated.gif");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: flex-end;
+    align-items: flex-start;
+    
+}
+
+.main-text h1{
+    font-family: "Poppins";
+    color: #f4f4f6;
+    font-size: 64px;
+    margin-top: 44%;
+    
+}
+
+.main-text p{
+    font-family: "Poppins";
+    color: #f4f4f6;
+    font-size: 32px;
+    font-weight: 300;
+    
+}
+
+/* Blog overview section */
+
+/* Blog text */
+.blog-post h2{
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.blog-post p{
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 20px;
+}
+
+/* Blog containers */
+.post-container{
+   display: grid; 
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(4,400px);
+   grid-gap: 20px;
+   margin-top: 4%;
+}
+
+.grid-item{
+    padding: 30px 30px 30px 30px;
+    background-color: #F4F4F6;
+    transition: all 0.3s ease 0s;
+
+}
+
+.grid-item:hover {
+    background-color: #505490;
+}
+
+/* Blog container text */
+.grid-item h3{
+    font-family: "Poppins";
+    font-weight: 500;
+    font-size: 24px;
+    color: #2C363F;
+    transition: all 0.3s ease 0s;
+}
+
+.grid-item:hover h3{
+    color: #F4F4F6;
+}
+
+.grid-item p{
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 30px;
+    color: #2C363F; 
+    transition: all 0.3s ease 0s;
+    
+}
+
+.grid-item:hover p{
+    color: #F4F4F6;
+}
+
+
+/* Make grids more responsive */
+    @media only screen and (max-width: 900px){
+        .post-container{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-areas: 
+            "grid-item-1"
+            "grid-item-2"
+            "grid-item-3"
+            "grid-item-4"
+            "grid-item-5"
+            "grid-item-6"
+            "grid-item-7"
+            "grid-item-8"
+            "grid-item-9"
+            "grid-item-10"
+            "grid-item-11"
+            "grid-item-12"
+            ;
+        }
+    }
+
+
+
+/*      Blog entry page     */
+
+/* Top section of blog entry */
+.journal-title{
+    margin: auto;
+    width: 50%;
+}
+
+/* Top section text */
+.journal-title h2{
+    padding-top: 100px;
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.journal-title p{
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 24px;
+}
+
+/* Blog entry container */
+.journal-text{
+    margin:30px auto;
+    align-items: flex-start;
+    background: #f4f4f6;
+    width:50%;
+    height:100%;
+    padding:3%;
+}
+
+/* Blog entry section text */
+.journal-text h4{
+    font-family: "Poppins";
+    font-size: 20px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.journal-text p{
+    font-family: "Poppins";
+    font-size: 16px;
+}
+
+/* stamp image */
+.stamp {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    
+}
+
+
+.journal-image{
+    margin: auto;
+    width: 50%;
+}
+
+.week-navigator{
+    display: flex;
+    margin: 10px auto;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.week-navigator a{
+    font-family: "Poppins";
+    color: #2C363F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.week-navigator a:hover {
+    text-decoration: underline;
+    text-decoration-thickness:3px
+}
+
+.footer{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    background-color: #2C363F;
+}
+
+
+
+
+
+
+
